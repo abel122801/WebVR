@@ -5,14 +5,18 @@
     <title>Peachtree Corners Veterans Monument - A-Frame</title>
     <meta name="description" content="Peachtree Corners Veterans Monument!">
     <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+    <script src="https://button.glitch.me/button.js"></script>  
   </head>
   <body>
     <a-scene>
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
-      <a-sky color="#ECECEC"></a-sky>
-    </a-scene>
+      <a-asset></a-asset>
+        <img id="grassTexture" src="https://cdn.glitch.com/b7b36154-a9f1-47d8-87ff-069fcc237a4b%2Fgreen_grass_texture_01_by_goodtextures.jpg?1528299809364">
+        <img id="skyTexture" src="https://cdn.glitch.com/b7b36154-a9f1-47d8-87ff-069fcc237a4b%2Fth.jfif?1528299811508">
+      <a-asset></a-asset>
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4" src= "#grassTexture"></a-plane>
+      <a-sky color="#ECECEC" src="#skyTexture"></a-sky>
+   </a-scene>
+    <div class="glitchButton"></div>
   </body>
 </html>
